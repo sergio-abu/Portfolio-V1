@@ -1,0 +1,20 @@
+.portfolioList {
+    background-color: #022140;
+    color: #fff;
+    border: 0.1px solid #fff;
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .portfolioList {
+        margin-right: 20px;
+   }
+}
+.portfolioList.active {
+    background-color: #022140;
+    color: #39ff14;
+    border: 0.1px solid #39ff14;
+}
+
