@@ -1,4 +1,4 @@
-.intro {
+.cover {
     background-color: black;
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -8,18 +8,35 @@
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     display: flex;
+    overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
-    .intro {
+    .cover {
         flex-direction: column;
         align-items: center;
    }
 }
-.intro .left {
+@keyframes fadeUp{
+    from{
+    transform: translateY(100px);
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+.cover .left {
     flex: 0.5;
     overflow: hidden;
+    animation: fadeUp 1s ease 0.5s backwards;
 }
-.intro .left .imgContainer {
+@media only screen and (max-width: 768px) {
+    .cover .left {
+        align-items: flex-start;
+        margin-top: 15%;
+   }
+}
+.cover .left .imgContainer {
     width: 600px;
     height: 600px;
     display: flex;
@@ -27,32 +44,39 @@
     justify-content: center;
     float: right;
 }
-.intro .left .imgContainer img{
+.cover .left .imgContainer img{
     max-width:100%;
     max-height:100%;
     float: right;
 }
 @media only screen and (max-width: 768px) {
-    .intro .left .imgContainer {
+    .cover .left .imgContainer {
         align-items: flex-start;
-        margin-top: 30px;
    }
 }
-.intro .left .imgContainer img {
+.cover .left .imgContainer img {
     height: 90%;
 }
 @media only screen and (max-width: 768px) {
-    .intro .left .imgContainer img {
+    .cover .left .imgContainer img {
+        margin-top: 5vh;
         max-width:30%;
         max-height:30%;
    }
 }
-.intro .right {
+.cover .right {
     color: white;
     flex: 0.5;
     position: relative;
+    animation: fadeUp 1s ease 1s backwards;
 }
-.intro .right .wrapper {
+@media only screen and (max-width: 768px) {
+    .cover .right {
+        padding-left: 0;
+        margin-bottom: 10%;
+    }
+}
+.cover .right .wrapper {
     width: 100%;
     height: 100%;
     padding-left: 50px;
@@ -61,65 +85,32 @@
     justify-content: center;
 }
 @media only screen and (max-width: 768px) {
-    .intro .right .wrapper {
+    .cover .right .wrapper {
         padding-left: 0;
         align-items: center;
    }
 }
-.intro .right .wrapper h1 {
+.cover .right .wrapper h1 {
     font-size: 60px;
     margin: 10px 0;
 }
 @media only screen and (max-width: 768px) {
-    .intro .right .wrapper h1 {
+    .cover .right .wrapper h1 {
         font-size: 40px;
    }
 }
-.intro .right .wrapper h2 {
+.cover .right .wrapper h2 {
     font-size: 35px;
 }
-.intro .right .wrapper h3 {
+.cover .right .wrapper h3 {
     font-size: 30px;
     background-color: black;
     background-size: 100px;
 }
 @media only screen and (max-width: 768px) {
-    .intro .right .wrapper h3 {
+    .cover .right .wrapper h3 {
         font-size: 20px;
    }
-}
-.intro .right .wrapper h3 span{
-    color: #39ff14;
-    font-size: inherit;
-    font-family: 'Ubuntu Mono', monospace;
-    white-space: nowrap; 
-    position: relative;
-}
-.intro .right .wrapper h3 span span{
-    color: #39ff14;
-    font-size: inherit;
-    font-family: 'Ubuntu Mono', monospace;
-    white-space: nowrap; 
-    position: relative;
-}
-.intro .right .wrapper h3 span span::before,
-.intro .right .wrapper h3 span span::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.intro .right .wrapper h3 span span::before{
-    background: black;
-    animation: typewriter 1s steps(17) 2s forwards;
-}
-.intro .right .wrapper h3 span span::after{
-    width: 0.5em;
-    background: #39ff14;
-    animation: typewriter 1s steps(17) 2s forwards, blink 2s steps(17) infinite 1s;
-    white-space: nowrap; 
 }
 @keyframes typewriter {
     to {
@@ -133,4 +124,37 @@
     51%,100% {
         opacity: 1;
       }
-  }
+}
+.cover .right .wrapper h3 span{
+    color: #39ff14;
+    font-size: inherit;
+    font-family: 'Ubuntu Mono', monospace;
+    white-space: nowrap; 
+    position: relative;
+}
+.cover .right .wrapper h3 span span{
+    color: #39ff14;
+    font-size: inherit;
+    font-family: 'Ubuntu Mono', monospace;
+    white-space: nowrap; 
+    position: relative;
+}
+.cover .right .wrapper h3 span span::before,
+.cover .right .wrapper h3 span span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.cover .right .wrapper h3 span span::before{
+    background: black;
+    animation: typewriter 1s steps(17) 2s forwards;
+}
+.cover .right .wrapper h3 span span::after{
+    width: 0.5em;
+    background: #39ff14;
+    animation: typewriter 1s steps(17) 2s forwards, blink 2s steps(17) infinite 1s;
+    white-space: nowrap; 
+}

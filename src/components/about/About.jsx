@@ -1,35 +1,38 @@
 import { useState } from "react";
-import "./works.css";
+import "./about.css";
 
-export default function Works() {
+export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: "./assets/AS.png",
-      title: "Front-end",
+      icon: "./assets/about1.png",
+      title: "Me",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "I'm a software engineer",
       img:
-        "./assets/WFRONT.jpg",
+        "./assets/about1.png",
+      src: "https://www.linkedin.com/in/sergio-abu/",
     },
     {
       id: "2",
-      icon: "./assets/AS.png",
-      title: "Back-end",
+      icon: "./assets/about2.png",
+      title: "Skills",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Tech that I work with",
       img:
-        "./assets/WBACK.jpg",
+        "./assets/about2.png",
+      src: "https://github.com/sergio-abu",
     },
     {
       id: "3",
-      icon: "./assets/AS.png",
-      title: "Misc.",
+      icon: "./assets/about3.png",
+      title: "Links",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "All my links",
       img:
-        "./assets/WMISC.jpg",
+        "./assets/about3.png",
+      src: "",
     },
   ];
 
@@ -40,8 +43,8 @@ export default function Works() {
   };
   
   return (
-    <div className="works" id="works">
-      <h1>Skills</h1>
+    <div className="about" id="about">
+      <h1>About</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -56,7 +59,7 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <a href={d.src}><span>More</span></a>
                 </div>
               </div>
               <div className="right">
@@ -70,13 +73,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/1cloud.png"
+        src="assets/button.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/1cloud.png"
+        src="assets/button.png"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

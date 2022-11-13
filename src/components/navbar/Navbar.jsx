@@ -1,15 +1,15 @@
-import './topbar.css'
+import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className={'topbar ' + (menuOpen && 'active')}>
+    <div className={'navbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
 
         <div className='left'>
-          <a href="#intro" className='logo'>Sergio A. S.</a>
+          <a href="#cover" className='logo'>Sergio A. S.</a>
           <div className="itemContainer">
             <FontAwesomeIcon className='icon'icon={faEnvelope} />
             <span>sergio-abu@proton.me</span>

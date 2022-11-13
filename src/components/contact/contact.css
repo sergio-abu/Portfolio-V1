@@ -5,57 +5,84 @@
 @media only screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
+        background-image: url('../../../public/assets/contact.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
    }
 }
 .contact .left {
     flex: 1;
     overflow: hidden;
+    background-image: url('../../../public/assets/contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact .left img {
     height: 100%;
 }
 .contact .right {
     flex: 1;
+}
+@media only screen and (max-width: 768px) {
+    .contact .left {
+        display: none;
+   }
+}
+.contact .right .card {
+    margin-top: 10rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.contact .right h2 {
+@media only screen and (max-width: 768px) {
+    .contact .right .card {
+        margin-top: 10%;
+   }
+}
+.contact .right .card h2 {
     color: #fff;
     font-size: 30px;
+    margin-bottom: 1rem;
 }
-.contact .right form {
-    width: 70%;
-    height: 70%;
+.contact .right .card form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.contact .right form input {
+.contact .right .card form input {
     width: 300px;
     height: 30px;
     font-size: 14px;
 }
 @media only screen and (max-width: 768px) {
     .contact .right form input {
-        width: 200px;
-        height: 20px;
+        width: 300px;
+        height: 30px;
    }
 }
 .contact .right form textarea {
+    margin-top: 0.5rem;
     width: 300px;
     height: 200px;
     font-size: 14px;
-}
-@media only screen and (max-width: 768px) {
-    .contact .right form textarea {
-        width: 200px;
-        height: 100px;
-   }
+    resize: none;
 }
 .contact .right form button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 150px;
     height: 30px;
     color: #39ff14;

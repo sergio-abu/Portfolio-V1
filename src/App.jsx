@@ -1,23 +1,35 @@
 import './app.css';
-import Topbar from "./components/topbar/Topbar";
-import Intro from "./components/intro/Intro";
-import Portifolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+import Navbar from "./components/navbar/Navbar";
+import Cover from "./components/cover/Cover";
+import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
 import Menu from './components/menu/Menu';
-
+import Loading from './components/loading/Loading'
 
 function App() {
+  const [isReady, setIsReady] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleLoading = () => {
+    setIsReady(true);
+    }
+    
+  setInterval(handleLoading, 2000); 
+
+  if(!isReady) {
+    return <Loading></Loading>
+  };
+    
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Topbar>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
       <div className="sections">
-        <Intro></Intro>
-        <Portifolio></Portifolio>
-        <Works></Works>
+        <Cover></Cover>
+        <Projects></Projects>
+        <About></About>
         <Contact></Contact>
       </div>
     </div>

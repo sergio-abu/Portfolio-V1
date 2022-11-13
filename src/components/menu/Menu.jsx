@@ -5,13 +5,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     <div className={'menu ' + (menuOpen && 'active')}>
         <ul>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href="#intro">Home</a>
+                <a href="#cover">Cover</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#projects">Projects</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
-                <a href="#works">Skills</a>
+                <a href="#about">About</a>
             </li>
             <li onClick={()=>setMenuOpen(false)}>
                 <a href="#contact">Contact</a>

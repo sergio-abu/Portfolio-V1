@@ -1,99 +1,157 @@
-export const featuredPortfolio = [
+export const firstPage = [
     {
       id: 1,
-      title: "Overview",
-      img: "",
+      title: "Python Exercises",
+      img: "./assets/data-img/python-exe.png",
+      src: "https://sergio-abu.github.io/Free-Python-Exercises/",
     },
     {
       id: 2,
-      title: "Banking",
-      img: "",
+      title: "Password Generator",
+      img: "./assets/data-img/passgen.jpg",
+      src: "https://sergio-abu.github.io/Generate-Password/",
     },
     {
       id: 3,
-      title: "Social Media",
-      img: "",
+      title: "Tasks App",
+      img: "./assets/data-img/tasks.png",
+      src: "https://sergio-abu.github.io/Task-App/",
     },
     {
       id: 4,
-      title: "Book",
-      img: "",
+      title: "Sketch App",
+      img: "./assets/data-img/sketch.jpg",
+      src: "https://sergio-abu.github.io/Sketch/",
     },
     {
       id: 5,
-      title: "Blog",
-      img: "",
+      title: "5",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 6,
-      title: "UI UX",
-      img: "",
+      title: "6",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
   ];
   
-  export const dynamicPortfolio = [
+  export const secondPage = [
     {
       id: 1,
-      title: "Marketplace",
-      img: "",
+      title: "1",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 2,
-      title: "Banking",
-      img: "",
+      title: "2",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 3,
-      title: "Social Media",
-      img: "",
+      title: "3",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 4,
-      title: "Relax",
-      img: "",
+      title: "4",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 5,
-      title: "Lifestyle",
-      img: "",
+      title: "5",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 6,
-      title: "Misc.",
-      img: "",
+      title: "6",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
   ];
   
-  export const staticPortfolio = [
+  export const thirdPage = [
     {
       id: 1,
-      title: "Book",
-      img: "",
+      title: "1",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 2,
-      title: "Blog",
-      img: "",
+      title: "2",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 3,
-      title: "UI UX",
-      img: "",
+      title: "3",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 4,
-      title: "Relax",
-      img: "",
+      title: "4",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 5,
-      title: "Lifestyle",
-      img: "",
+      title: "5",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 6,
-      title: "Misc.",
-      img: "",
+      title: "6",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
   ];
   
+    export const fourthPage = [
+    {
+      id: 1,
+      title: "1",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+    {
+      id: 2,
+      title: "2",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+    {
+      id: 3,
+      title: "3",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+    {
+      id: 4,
+      title: "4",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+    {
+      id: 5,
+      title: "5",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+    {
+      id: 6,
+      title: "6",
+      img: "./assets/data-img/default.jpg",
+      src: "",
+    },
+  ];
+  
+ 

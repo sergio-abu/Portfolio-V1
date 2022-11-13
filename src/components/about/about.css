@@ -1,5 +1,5 @@
-.works {
-    background-image: url('../../../public/assets/mountain.png');
+.about {
+    background-image: url('../../../public/assets/about.jpg');
     background-color: #1E4258;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,46 +9,53 @@
     justify-content: center;
     position: relative;
 }
-.works h1 {
-    top: 0px;
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
-}
 @media only screen and (max-width: 1200px) {
-    .works  {
+    .about  {
         overflow: hidden;
    }
 }
+.about h1 {
+    top: 15px;
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+}
 @media only screen and (max-width: 768px) {
-    .works h1 {
+    .about h1 {
+        top: 10px;
+        font-size: 40px;
+   }
+}
+@media only screen and (max-width: 480px) {
+    .about h1 {
+        top: 5px;
         font-size: 20px;
    }
 }
-.works .arrow {
-    height: 200px;
+.about .arrow {
+    height: 100px;
     position: absolute;
     cursor: pointer;
 }
-.works .arrow:hover {
+.about .arrow:hover {
     filter: brightness(50%);
 }
-.works .arrow:active {
-    height: 196px;
+.about .arrow:active {
+    height: 98px;
 }
 @media only screen and (max-width: 1200px) {
-    .works .arrow {
+    .about .arrow {
         display: none;
    }
 }
-.works .arrow.left {
+.about .arrow.left {
     left: 100px;
     transform: rotateY(180deg);
 }
-.works .arrow.right {
+.about .arrow.right {
     right: 100px;
 }
-.works .slider {
+.about .slider {
     height: 350px;
     display: flex;
     position: absolute;
@@ -56,19 +63,19 @@
     transition: all 1s ease-out;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider {
+    .about .slider {
         height: 100vh;
         flex-direction: column;
         justify-content: center;
    }
 }
-.works .slider .container {
+.about .slider .container {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.works .slider .container .item {
+.about .slider .container .item {
     width: 700px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
@@ -77,79 +84,79 @@
     justify-content: center;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider .container .item {
+    .about .slider .container .item {
         width: 80%;
         height: 150px;
         margin: 15px 0;
    }
 }
 @media only screen and (max-width: 768px) {
-    .works .slider .container .item {
+    .about .slider .container .item {
         width: 80%;
-        height: 130px;
+        height: 100px;
         margin: 10px 0;
    }
 }
-.works .slider .container .item .left {
+.about .slider .container .item .left {
     flex: 4;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.works .slider .container .item .left .leftContainer {
+.about .slider .container .item .left .leftContainer {
     width: 90%;
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.works .slider .container .item .left .leftContainer .imgContainer {
+.about .slider .container .item .left .leftContainer .imgContainer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #022140;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider .container .item .left .leftContainer .imgContainer {
+    .about .slider .container .item .left .leftContainer .imgContainer {
         width: 20px;
         height: 20px;
    }
 }
-.works .slider .container .item .left .leftContainer .imgContainer img {
+.about .slider .container .item .left .leftContainer .imgContainer img {
     width: 25px;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider .container .item .left .leftContainer .imgContainer img {
+    .about .slider .container .item .left .leftContainer .imgContainer img {
         width: 15px;
    }
 }
-.works .slider .container .item .left .leftContainer h2 {
+.about .slider .container .item .left .leftContainer h2 {
     font-size: 20px;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider .container .item .left .leftContainer h2 {
+    .about .slider .container .item .left .leftContainer h2 {
         font-size: 13px;
    }
 }
-.works .slider .container .item .left .leftContainer p {
+.about .slider .container .item .left .leftContainer p {
     font-size: 13px;
 }
 @media only screen and (max-width: 1200px) {
-    .works .slider .container .item .left .leftContainer p {
+    .about .slider .container .item .left .leftContainer p {
         display: none;
    }
 }
-.works .slider .container .item .left .leftContainer span {
+.about .slider .container .item .left .leftContainer span {
     font-size: 12px;
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
+    color: black;
 }
-.works .slider .container .item .right {
+.about .slider .container .item .right {
     flex: 8;
     height: 100%;
     display: flex;
@@ -157,7 +164,7 @@
     justify-content: center;
     overflow: hidden;
 }
-.works .slider .container .item .right img {
-    max-width: 100%;
-    max-height: 100%;
+.about .slider .container .item .right img {
+    max-width: 60%;
+    max-height: 60%;
 }

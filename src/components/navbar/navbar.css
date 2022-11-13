@@ -1,4 +1,4 @@
-.topbar {
+.navbar {
     width: 100%;
     height: 70px;
     background-color: #022140;
@@ -8,47 +8,47 @@
     z-index: 3;
     transition: all 1s ease;
 }
-.topbar .wrapper {
+.navbar .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.topbar .wrapper .left {
+.navbar .wrapper .left {
     display: flex;
     align-items: center;
 }
-.topbar .wrapper .left .logo {
+.navbar .wrapper .left .logo {
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
     color: inherit;
     margin-right: 40px;
 }
-.topbar .wrapper .left .itemContainer {
+.navbar .wrapper .left .itemContainer {
     display: flex;
     align-items: center;
     margin-left: 30px;
 }
 @media only screen and (max-width: 768px) {
-    .topbar .wrapper .left .logo {
+    .navbar .wrapper .left .logo {
         font-size: 30px;
    }
 }
 @media only screen and (max-width: 768px) {
-    .topbar .wrapper .left .itemContainer {
+    .navbar .wrapper .left .itemContainer {
         display: none;
    }
 }
-.topbar .wrapper .left .itemContainer .icon {
+.navbar .wrapper .left .itemContainer .icon {
     font-size: 18px;
     margin-right: 5px;
 }
-.topbar .wrapper .left .itemContainer span {
+.navbar .wrapper .left .itemContainer span {
     font-size: 15px;
     font-weight: 500;
 }
-.topbar .wrapper .right .hamburger {
+.navbar .wrapper .right .hamburger {
     width: 32px;
     height: 25px;
     display: flex;
@@ -56,25 +56,25 @@
     justify-content: space-between;
     cursor: pointer;
 }
-.topbar .wrapper .right .hamburger span {
+.navbar .wrapper .right .hamburger span {
     width: 100%;
     height: 3px;
     background-color: #fff;
     transform-origin: left;
     transition: all 2s ease;
 }
-.topbar.active {
+.navbar.active {
     background-color: #fff;
     color: #022140;
 }
-.topbar.active .hamburger span:first-child {
+.navbar.active .hamburger span:first-child {
     background-color: #022140;
     transform: rotate(45deg);
 }
-.topbar.active .hamburger span:nth-child(2) {
+.navbar.active .hamburger span:nth-child(2) {
     opacity: 0;
 }
-.topbar.active .hamburger span:last-child {
+.navbar.active .hamburger span:last-child {
     background-color: #022140;
     transform: rotate(-45deg);
 }
