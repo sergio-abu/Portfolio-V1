@@ -12,7 +12,7 @@ export default function About() {
         "I'm a software engineer",
       img:
         "./assets/about1.png",
-      src: "https://www.linkedin.com/in/sergio-abu/",
+      src: "",
     },
     {
       id: "2",
@@ -22,7 +22,7 @@ export default function About() {
         "Tech that I work with",
       img:
         "./assets/about2.png",
-      src: "https://github.com/sergio-abu",
+      src: "",
     },
     {
       id: "3",
@@ -41,7 +41,7 @@ export default function About() {
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
-  
+
   return (
     <div className="about" id="about">
       <h1>About</h1>

@@ -2,26 +2,26 @@ export const firstPage = [
     {
       id: 1,
       title: "Python Exercises",
-      img: "./assets/data-img/python-exe.png",
+      img: "./assets/data-img/default.jpg",
       src: "https://sergio-abu.github.io/Free-Python-Exercises/",
     },
     {
       id: 2,
       title: "Password Generator",
-      img: "./assets/data-img/passgen.jpg",
-      src: "https://sergio-abu.github.io/Generate-Password/",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 3,
       title: "Tasks App",
-      img: "./assets/data-img/tasks.png",
+      img: "./assets/data-img/default.jpg",
       src: "https://sergio-abu.github.io/Task-App/",
     },
     {
       id: 4,
-      title: "Sketch App",
-      img: "./assets/data-img/sketch.jpg",
-      src: "https://sergio-abu.github.io/Sketch/",
+      title: "4",
+      img: "./assets/data-img/default.jpg",
+      src: "",
     },
     {
       id: 5,
@@ -36,7 +36,7 @@ export const firstPage = [
       src: "",
     },
   ];
-  
+
   export const secondPage = [
     {
       id: 1,
@@ -75,7 +75,7 @@ export const firstPage = [
       src: "",
     },
   ];
-  
+
   export const thirdPage = [
     {
       id: 1,
@@ -114,7 +114,7 @@ export const firstPage = [
       src: "",
     },
   ];
-  
+
     export const fourthPage = [
     {
       id: 1,
@@ -153,5 +153,4 @@ export const firstPage = [
       src: "",
     },
   ];
-  
- 
+

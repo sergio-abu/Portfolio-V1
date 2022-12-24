@@ -12,11 +12,11 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           <a href="#cover" className='logo'>Sergio A. S.</a>
           <div className="itemContainer">
             <FontAwesomeIcon className='icon'icon={faEnvelope} />
-            <span>sergio-abu@proton.me</span>
+            <span>sergio-abu@pm.me</span>
           </div>
           <div className="itemContainer">
             <FontAwesomeIcon className='icon'icon={faWhatsapp} />
-            <span>+55 53 981147772</span>
+            <span>+55 00 000000000</span>
           </div>
         </div>
 

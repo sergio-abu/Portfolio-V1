@@ -1,7 +1,7 @@
 {
   "name": "reactportf",
   "version": "0.1.0",
-  "homepage": "https://sergio-abu.github.io",
+  "homepage": "https://sergio-abu.github.io/Portfolio-V1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
